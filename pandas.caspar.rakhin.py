@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Creating a sample DataFrame
-data = {'Name': [
+data = { 'Name': [
     "John", "Emily", "Michael", "Sophia", "James", "Olivia", "William", "Ava", "Benjamin", "Isabella",
     "Alexander", "Charlotte", "Daniel", "Emma", "Christopher", "Harper", "Matthew", "Amelia", "Ethan", "Madison",
     "Andrew", "Abigail", "David", "Elizabeth", "Joshua", "Sofia", "Joseph", "Grace", "Samuel", "Victoria",
@@ -18,8 +18,7 @@ data = {'Name': [
     79, 32, 55, 59, 30, 71, 33, 63, 69, 45, 31, 73, 77, 41, 60, 37, 48, 18, 74, 50,
     39, 58, 56, 65, 64, 40, 54, 25, 67, 66, 53, 21, 27, 19, 20, 44, 51, 22, 28, 26,
     47, 80, 34, 19, 79, 55, 41, 48, 53, 49, 54, 65, 66, 44, 37, 52, 27, 59, 70, 47,
-    73, 30, 20, 31, 78, 69, 72, 38, 61, 71, 43, 68, 23, 42, 35, 39, 58, 74, 56, 25,
-    32, 36, 26, 77, 60, 63, 45, 28, 75
+    73, 30, 20, 31, 78, 69, 72, 38, 61, 71, 43, 68, 23, 42, 35, 39, 58, 74, 56, 25
 ],
         'City': [
     'London', 'Birmingham', 'Glasgow', 'Liverpool', 'Bristol', 'Manchester',
