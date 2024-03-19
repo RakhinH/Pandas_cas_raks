@@ -1,7 +1,7 @@
 import pandas as pd
-
+#---
 def name_subject_attendance_function():
-    ## Creating a sample DataFrame
+    ## Creating a sample DataFrame:
     data = { 'Name' : [
     "Emily", "Liam", "Sophia", "Noah", "Olivia", "Ethan", "Ava", "Mason", "Isabella", "Logan",
     "Mia", "Lucas", "Amelia", "Jackson", "Harper", "Aiden", "Evelyn", "Oliver", "Abigail", "Jacob",
@@ -13,7 +13,8 @@ def name_subject_attendance_function():
     "Dylan", "Nova", "Luke", "Hazel", "Owen", "Addison", "Caleb", "Willow", "Josiah", "Emilia", 
     "Levi", "Paisley", "Isaiah", "Lila", "Jack", "Brooklyn", "Eli", "Savannah", "Lincoln", "Audrey", 
     "Andrew", "Claire", "Connor", "Elena", "Cameron", "Skylar", "Aaron", "Naomi", "Hunter", "Isla", 
-    "Thomas", "Leah", "Christian"],
+    "Thomas", "Leah", "Christian"
+    ],
             'Subjects' : [
     "Mathematics", "English", "Science", "Mathematics", "English", "Science", "English", "Mathematics", "Science", "English",
     "Mathematics", "Science", "English", "Mathematics", "Science", "English", "Mathematics", "Science", "English", "Mathematics",
@@ -26,9 +27,32 @@ def name_subject_attendance_function():
     "Science", "English", "Mathematics", "Science", "English", "Mathematics", "Science", "English", "Mathematics", "Science",
     "English", "Mathematics", "Science", "English", "Mathematics", "Science", "English", "Mathematics", "Science", "English",
     "Mathematics", "Science", "English"
+],
+            'Score' : [
+    79, 68, 91, 73, 94, 66, 81, 70, 88, 72,
+    77, 67, 80, 82, 85, 65, 95, 97, 63, 86,
+    83, 62, 89, 78, 90, 69, 96, 98, 61, 75,
+    99, 87, 64, 76, 84, 92, 74, 71, 93, 100,
+    79, 68, 91, 73, 94, 66, 81, 70, 88, 72,
+    77, 67, 80, 82, 85, 65, 95, 97, 63, 86,
+    83, 62, 89, 78, 90, 69, 96, 98, 61, 75,
+    99, 87, 64, 76, 84, 92, 74, 71, 93, 100
+],
+            'Attendance' : [
+    95, 81, 99, 89, 98, 82, 76, 94, 85, 91,
+    90, 80, 78, 93, 88, 87, 86, 77, 75, 97,
+    96, 84, 79, 92, 100, 83, 96, 81, 97, 85,
+    95, 76, 88, 93, 79, 92, 82, 98, 86, 75,
+    99, 90, 77, 100, 94, 80, 84, 89, 91, 78,
+    83, 87, 95, 81, 97, 76, 86, 100, 94, 80,
+    75, 79, 88, 92, 90, 83, 85, 98, 77, 96,
+    81, 97, 84, 89, 95, 78, 82, 93, 100, 76,
+    80, 91, 87, 99, 75, 86, 90, 94, 77, 98,
+    92, 93, 83, 81, 96, 95, 79, 84, 97, 88,
+    89, 100
 ]
-
     }
+
 
 def name_city_age_function():
     ## Creating a sample DataFrame
@@ -127,5 +151,10 @@ def name_city_age_function():
     print("Average age below:")
     print(df['Age'].mean())## The average age
     print("\n")
+#---
 
-name_city_age_function()
+menu = input("1= name, subject and attendance funtion\n2= name, city and age function\n")
+if menu == "1":
+    name_subject_attendance_function()
+elif menu == "2":
+    name_city_age_function()
