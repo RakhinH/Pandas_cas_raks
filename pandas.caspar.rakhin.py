@@ -89,6 +89,14 @@ print("Names and cities of people who are older than 30:")
 print(names_and_cities_old_30)
 print("\n")
 
+print("The total age below:")
+print(df['Age'].sum())## The total age
+print("\n")
+
+print("Average age below:")
+print(df['Age'].mean())## The average age
+print("\n")
+
 # class Person:
 #     def __init__(self, name, age, city):
 #         self.name = name
