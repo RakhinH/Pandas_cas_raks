@@ -74,16 +74,20 @@ print("The name and city of row b and d ")
 print(df.loc[["BB", "DD"], ["Name", "City"]])## Task loc
 print("\n")
 
-old_30 = df[df['Age']>= 30]
+old_30 = df[df['Age']>= 30]## Conditional logic
 print("These are people older or as old as 30:")
 print(old_30)
 print("\n")
 
-young_20_and_newyork = df[(df['City'] == 'New York') & (df['Age'] < 30)]
-print("People who are younger than 20, or as old as 20 and live in New York:")
-print(young_20_and_newyork)
+young_20_and_bristol = df[(df['City'] == 'Bristol') & (df['Age'] <= 30)]## Multiple conditions
+print("People who are younger than 20, or as old as 20 and live in Bristol:")
+print(young_20_and_bristol)
 print("\n")
-#
+
+names_and_cities_old_30 = df.loc[df['Age'] > 30, ['Name', 'City']]## Multiple conditions
+print("Names and cities of people who are older than 30:")
+print(names_and_cities_old_30)
+print("\n")
 
 # class Person:
 #     def __init__(self, name, age, city):
